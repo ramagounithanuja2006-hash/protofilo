@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramagouni Thanuja | Portfolio</title>
+  <meta name="description" content="Portfolio of Ramagouni Thanuja — Computer Science Engineer, AI & ML enthusiast, full stack developer, and problem solver." />
+  <meta name="theme-color" content="#09090B" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <div class="particle-layer" id="particles"></div>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="#home" class="logo" aria-label="Home">RT</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="reveal-left">
+          <div class="eyebrow"><i class="fas fa-sparkles"></i> Hello, I&apos;m</div>
+          <h1>Ramagouni <span>Thanuja</span></h1>
+          <div class="typing-wrapper">
+            <span class="typing-text" id="typingText"></span><span class="typing-cursor"></span>
+          </div>
+          <p>
+            Motivated Computer Science student with strong foundations in programming, software development, and problem-solving. I build elegant web experiences, explore the world of Artificial Intelligence and Machine Learning, and enjoy turning ideas into impactful solutions.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary ripple" href="resume.pdf">Download Resume</a>
+            <a class="btn btn-outline ripple" href="#projects"><i class="fas fa-layer-group"></i> View Projects</a>
+            <a class="btn btn-secondary ripple" href="#contact"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ramagounithanuja2006" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:ramagounithanuja2006@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+919949898297" aria-label="Phone"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-right">
+          <div class="hero-card">
+            <div class="avatar-wrap">
+              <img class="avatar" src="p1.jpg" alt="Ramagouni Thanuja" />
+            </div>
+            <div class="hero-badge"><i class="fas fa-rocket"></i> Building with code & curiosity</div>
+            <div class="hero-stats">
+              <div class="stat">
+                <strong data-count="3">0</strong>
+                <span>Years of growth</span>
+              </div>
+              <div class="stat">
+                <strong data-count="20">0</strong>
+                <span>Projects explored</span>
+              </div>
+              <div class="stat">
+                <strong data-count="100">0</strong>
+                <span>Problem-solving days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-user"></i> About Me</div>
+          <h2>Crafting ideas into meaningful digital experiences</h2>
+          <p>
+            I am a motivated Computer Science student with a strong foundation in programming, software development, and problem-solving. I enjoy building impactful web applications, exploring Artificial Intelligence and Machine Learning, and continuously learning new technologies.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card reveal-left">
+            <h3>Who I Am</h3>
+            <p>
+              My goal is to become a software engineer who creates innovative products that solve real-world problems and positively impact society. I thrive in environments where creativity, logic, and empathy meet.
+            </p>
+            <p>
+              Whether I am designing interfaces, writing efficient algorithms, or learning the next emerging technology, I always bring curiosity, discipline, and enthusiasm to every challenge.
+            </p>
+          </div>
+          <div class="glass-card reveal-right">
+            <h3>Personal Details</h3>
+            <ul class="detail-list">
+              <li><strong>Name</strong><span>Ramagouni Thanuja</span></li>
+              <li><strong>Location</strong><span>Proddatur, Andhra Pradesh</span></li>
+              <li><strong>Email</strong><span>ramagounithanuja2006@gmail.com</span></li>
+              <li><strong>Phone</strong><span>9949898297</span></li>
+              <li><strong>LinkedIn</strong><span><a href="https://www.linkedin.com/in/ramagounithanuja2006" target="_blank" rel="noreferrer">Visit Profile</a></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-graduation-cap"></i> Education</div>
+          <h2>Learning, growing, and building foundations</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item reveal-zoom">
+            <div class="timeline-tag">B.Tech</div>
+            <h3>Computer Science Engineering</h3>
+            <p>Currently Pursuing • 3rd Year</p>
+          </div>
+          <div class="timeline-item reveal-zoom">
+            <div class="timeline-tag">Intermediate</div>
+            <h3>MPC</h3>
+            <p>Vignan Girls Junior College • 93%</p>
+          </div>
+          <div class="timeline-item reveal-zoom">
+            <div class="timeline-tag">SSC</div>
+            <h3>Y.V.S Municipal High School</h3>
+            <p>78%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-code"></i> Technical Skills</div>
+          <h2>Skills shaped by curiosity and consistency</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="glass-card skill-card reveal-left">
+            <h3>Programming</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-head"><span>C</span><span>90%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-head"><span>Python</span><span>88%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-head"><span>Java</span><span>80%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="80%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal-right">
+            <h3>Web Development</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-head"><span>HTML</span><span>95%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-head"><span>CSS</span><span>92%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-head"><span>JavaScript</span><span>90%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="90%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal-left">
+            <h3>Core Subjects</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-head"><span>Data Structures</span><span>87%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="87%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-head"><span>Algorithms</span><span>84%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="84%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal-right">
+            <h3>Tools</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-head"><span>Git</span><span>86%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="86%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-head"><span>VS Code</span><span>94%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-width="94%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-briefcase"></i> Projects</div>
+          <h2>Selected work shaped by impact and creativity</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal-zoom">
+            <div class="project-icon"><i class="fas fa-route"></i></div>
+            <h3>College Branch Guide & Career Mapper</h3>
+            <p>A web application that guides students with career paths, salary insights, job opportunities, and branch selection.</p>
+            <div class="tag-row">
+              <span>UI/UX</span><span>Web App</span><span>Career Guidance</span>
+            </div>
+          </article>
+          <article class="project-card reveal-zoom">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <h3>Mental Wellness Tracker</h3>
+            <p>Tracks mood, stress levels, daily habits, and provides insights for student well-being.</p>
+            <div class="tag-row">
+              <span>Productivity</span><span>Wellness</span><span>Dashboard</span>
+            </div>
+          </article>
+          <article class="project-card reveal-zoom">
+            <div class="project-icon"><i class="fas fa-tint"></i></div>
+            <h3>Blood Group & Hb Analyzer</h3>
+            <p>A system that estimates hemoglobin levels using blood group analysis.</p>
+            <div class="tag-row">
+              <span>Health Tech</span><span>Analytics</span><span>ML</span>
+            </div>
+          </article>
+          <article class="project-card reveal-zoom">
+            <div class="project-icon"><i class="fas fa-leaf"></i></div>
+            <h3>Herbal Plants Study</h3>
+            <p>Research project focused on medicinal plants and their healthcare benefits.</p>
+            <div class="tag-row">
+              <span>Research</span><span>Knowledge Base</span><span>Education</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-award"></i> Certifications</div>
+          <h2>Recognitions that fuel my growth</h2>
+        </div>
+        <div class="card-grid">
+          <div class="micro-card reveal-left">
+            <h3>Cybersecurity & Ethical Hacking</h3>
+            <p>GITAM</p>
+          </div>
+          <div class="micro-card reveal-right">
+            <h3>C Programming Workshop</h3>
+            <p>GITAM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-star"></i> Soft Skills</div>
+          <h2>Strengths that complement technical excellence</h2>
+        </div>
+        <div class="soft-grid">
+          <div class="soft-card reveal-zoom"><div class="soft-icon"><i class="fas fa-users"></i></div><h3>Teamwork</h3></div>
+          <div class="soft-card reveal-zoom"><div class="soft-icon"><i class="fas fa-chess-knight"></i></div><h3>Leadership</h3></div>
+          <div class="soft-card reveal-zoom"><div class="soft-icon"><i class="fas fa-comments"></i></div><h3>Communication</h3></div>
+          <div class="soft-card reveal-zoom"><div class="soft-icon"><i class="fas fa-clock"></i></div><h3>Time Management</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-language"></i> Languages</div>
+          <h2>Communicating ideas clearly and confidently</h2>
+        </div>
+        <div class="card-grid">
+          <div class="micro-card reveal-left"><h3>English</h3><p>Fluent communication and writing</p></div>
+          <div class="micro-card reveal-right"><h3>Telugu</h3><p>Native and expressive</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-trophy"></i> Achievements</div>
+          <h2>Growing through every challenge</h2>
+        </div>
+        <div class="achievement-grid">
+          <div class="achievement-card reveal-left"><h3>Problem Solver</h3><p>Enjoys tackling complex problems through structured thinking and persistence.</p></div>
+          <div class="achievement-card reveal-zoom"><h3>Continuous Learner</h3><p>Always exploring new tools, concepts, and practices to stay ahead.</p></div>
+          <div class="achievement-card reveal-right"><h3>AI Enthusiast</h3><p>Passionate about building intelligent systems that make real-world impact.</p></div>
+          <div class="achievement-card reveal-left"><h3>Web Developer</h3><p>Creates polished and responsive digital experiences with user-centered design.</p></div>
+          <div class="achievement-card reveal-zoom"><h3>Open Source Learner</h3><p>Believes in collaboration, sharing knowledge, and contributing to the community.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-cogs"></i> Services</div>
+          <h2>Services crafted around innovation and impact</h2>
+        </div>
+        <div class="service-grid">
+          <div class="service-card reveal-left"><h3>Web Development</h3><p>Responsive, modern, and user-focused websites tailored to modern needs.</p></div>
+          <div class="service-card reveal-zoom"><h3>Frontend Development</h3><p>Elegant UI systems with smooth interactions and performance-first thinking.</p></div>
+          <div class="service-card reveal-right"><h3>Problem Solving</h3><p>Structured thinking for debugging, optimization, and product challenges.</p></div>
+          <div class="service-card reveal-left"><h3>AI/ML Learning</h3><p>Exploration and experimentation in intelligent systems and analytics.</p></div>
+          <div class="service-card reveal-zoom"><h3>Software Development</h3><p>Building scalable logic, tools, and applications with clean architecture.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="kicker"><i class="fas fa-paper-plane"></i> Contact</div>
+          <h2>Let&apos;s build something meaningful together</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="glass-card contact-info reveal-left">
+            <h3>Get in touch</h3>
+            <p>Feel free to reach out for collaboration, internships, or project discussions.</p>
+            <ul class="detail-list">
+              <li><i class="fas fa-phone"></i><span>9949898297</span></li>
+              <li><i class="fas fa-envelope"></i><span>ramagounithanuja2006@gmail.com</span></li>
+              <li><i class="fab fa-linkedin-in"></i><span><a href="https://www.linkedin.com/in/ramagounithanuja2006" target="_blank" rel="noreferrer">LinkedIn</a></span></li>
+              <li><i class="fas fa-map-marker-alt"></i><span>Proddatur, Andhra Pradesh</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card reveal-right">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your Name" />
+                <div class="error-text" data-error="name"></div>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Your Email" />
+                <div class="error-text" data-error="email"></div>
+              </div>
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Subject" />
+                <div class="error-text" data-error="subject"></div>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+                <div class="error-text" data-error="message"></div>
+              </div>
+              <button class="btn btn-primary ripple" type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Designed &amp; Developed by <strong>Ramagouni Thanuja</strong></p>
+      <p>© <span id="year"></span> All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<script src="script.js"></script>
+  </body>
+</html>
